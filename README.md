@@ -114,7 +114,7 @@ After running `main.py`, the `outputs/` directory will contain:
 ## Key Design Decisions
 
 ### No Data Leakage
-- **Patient-level split**: No patient appears in both train and test sets.
+- **Patient-level split**: No patient appears in both the train and test sets.
 - **Scaler fit on train only**: `StandardScaler` is fit exclusively on training data.
 - **Backward-only rolling features**: `.shift(1)` is applied before `.rolling()` to exclude the current hour.
 - **Post-diagnosis rows dropped**: All data at and after the first SepsisLabel=1 hour is discarded.
