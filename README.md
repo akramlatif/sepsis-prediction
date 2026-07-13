@@ -60,7 +60,7 @@ pip install -r requirements.txt
 
 ### 2. Download the dataset
 
-Download the PhysioNet 2019 Sepsis Challenge data from:  
+Download the PhysioNet 2019 Sepsis Challenge data and upload it for training:  
 https://physionet.org/content/challenge-2019/1.0.0/
 
 You need to register for a PhysioNet account and sign the data use agreement.
@@ -89,7 +89,7 @@ The pipeline will:
 3. Perform a patient-level 80/20 train/test split
 4. Engineer rolling temporal features
 5. Preprocess (impute, normalize) — fit on train only
-6. Detect and remove noisy labels using cleanlab
+6. Detect and remove noisy labels using Cleanlab
 7. Train XGBoost and LightGBM models with early stopping
 8. Calibrate probability outputs
 9. Evaluate and save results
