@@ -18,8 +18,8 @@ This project implements a complete machine-learning pipeline that addresses the 
 | **Poor calibration** | Isotonic regression calibration |
 
 Two models are trained and compared:
-1. **XGBoost** — gradient-boosted tree baseline  
-2. **LightGBM** — advanced gradient-boosting model
+1. **XGBoost**  gradient-boosted tree baseline  
+2. **LightGBM**  advanced gradient-boosting model
 
 ---
 
@@ -120,7 +120,7 @@ After running `main.py`, the `outputs/` directory will contain:
 - **Post-diagnosis rows dropped**: All data at and after the first SepsisLabel=1 hour is discarded.
 
 ### Label Engineering
-- The prediction target (`label_6h`) is set to 1 for the 6 hours *before* the first recorded sepsis onset.
+- The prediction target (`label-6h`) is set to 1 for the 6 hours *before* the first recorded sepsis onset.
 - This creates a clinically meaningful early-warning window.
 
 ### Label Noise Handling
